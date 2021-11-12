@@ -36,7 +36,6 @@ Your command line should change to:
 
 ```
 root@hostname:/home/[username]
-
 ```
 
 Adding a string of text to a file is often used to add the name of a software repository to the sources file, without opening the file for editing. Use the following syntax with echo, sudo and tee command:
@@ -44,9 +43,9 @@ Adding a string of text to a file is often used to add the name of a software re
 
 ```
 echo ‘string-of-text’ | sudo tee -a [path_to_file]
-
 ```
 
+Example:
 
 ````
 echo "deb http://nginx.org/packages/debian `lsb_release -cs` nginx" \ | sudo tee /etc/apt/sources.list.d/nginx.list
